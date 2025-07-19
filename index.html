@@ -258,105 +258,82 @@ I’m a proud father and family man who values the balance between work, life, a
           </span>
         </h2>
         <div class="contact__form-container">
-          <form id="contactForm" class="contact__form">
-            <div class="contact__form-field">
-              <label class="contact__form-label" for="name">Name</label>
-              <input
-                required
-                placeholder="Enter Your Name"
-                type="text"
-                class="contact__form-input"
-                name="name"
-                id="name"
-              />
-            </div>
-            <div class="contact__form-field">
-              <label class="contact__form-label" for="email">Email</label>
-              <input
-                required
-                placeholder="Enter Your Email"
-                type="text"
-                class="contact__form-input"
-                name="email"
-                id="email"
-              />
-            </div>
-            <div class="contact__form-field">
-              <label class="contact__form-label" for="message">Message</label>
-              <textarea
-                required
-                cols="30"
-                rows="10"
-                class="contact__form-input"
-                placeholder="Enter Your Message"
-                name="message"
-                id="message"
-              ></textarea>
-            </div>
-            <button type="submit" class="btn btn--theme contact__btn">
-              Submit
-            </button>
-          </form>
-        </div>
-      </div>
-    </section>
-    <footer class="main-footer">
-      <div class="main-container">
-        <div class="main-footer__upper">
-          <div class="main-footer__row main-footer__row-1">
-            <h2 class="heading heading-sm main-footer__heading-sm">
-              <span>Social</span>
-            </h2>
-            <div class="main-footer__social-cont">
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/linkedin-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/github-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/twitter-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/yt-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon main-footer__icon--mr-none"
-                  src="./assets/png/insta-ico.png"
-                  alt="icon"
-                />
-              </a>
-            </div>
-          </div>
-          <div class="main-footer__row main-footer__row-2">
-            <h4 class="heading heading-sm text-lt">Meeaad Bharoochi</h4>
-            <p class="main-footer__short-desc">
-              I am eager to bring my skills in IT automation, scripting, and problem-solving to your team. Please feel free to contact me anytime to discuss how I can contribute to your organization’s success.
-            </p>
-          </div>
-        </div>
+  <form
+    id="contactForm"
+    class="contact__form"
+    action="https://formspree.io/f/mjkogvjd"
+    method="POST"
+  >
+    <input type="hidden" name="_subject" value="New contact form submission!" />
+    <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html" />
 
-      </div>
-    </footer>
+    <div class="contact__form-field">
+      <label class="contact__form-label" for="name">Name</label>
+      <input
+        required
+        placeholder="Enter Your Name"
+        type="text"
+        class="contact__form-input"
+        name="name"
+        id="name"
+      />
+    </div>
+
+    <div class="contact__form-field">
+      <label class="contact__form-label" for="email">Email</label>
+      <input
+        required
+        placeholder="Enter Your Email"
+        type="email"
+        class="contact__form-input"
+        name="email"
+        id="email"
+      />
+    </div>
+
+    <div class="contact__form-field">
+      <label class="contact__form-label" for="message">Message</label>
+      <textarea
+        required
+        cols="30"
+        rows="10"
+        class="contact__form-input"
+        placeholder="Enter Your Message"
+        name="message"
+        id="message"
+      ></textarea>
+    </div>
+
+    <button type="submit" class="btn btn--theme contact__btn">
+      Submit
+    </button>
+  </form>
+</div>
+
 
     <script src="./index.js"></script>
-    <script src="./script.js"></script>
+<script>
+  const form = document.getElementById("contactForm");
+
+  form.addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+    const response = await fetch(form.action, {
+      method: form.method,
+      body: formData,
+      headers: {
+        Accept: "application/json"
+      }
+    });
+
+    if (response.ok) {
+      alert("✅ Thank you! Your message has been sent.");
+      form.reset();
+    } else {
+      alert("❌ Oops! Something went wrong. Please try again.");
+    }
+  });
+</script>
   </body>
 </html>
