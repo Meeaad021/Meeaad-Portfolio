@@ -276,8 +276,9 @@ textarea {
       max-width: 60rem;
       line-height: 1.7;
       margin-bottom: 1rem;
+      margin-left: 2rem; /* add this */
       list-style-type: disc;      /* add this */
-      padding-left: rem; 
+      padding-left: 1rem; 
       display: list-item; /* add this */
 }
       
