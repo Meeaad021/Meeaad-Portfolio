@@ -269,6 +269,18 @@ textarea {
       max-width: 60rem;
       line-height: 1.7;
       margin-bottom: 1rem; }
+
+    .experience-details-para {
+      font-size: 1.8rem;
+      color: grey;
+      max-width: 60rem;
+      line-height: 1.7;
+      margin-bottom: 1rem;
+      list-style-type: disc!important;      /* add this */
+      padding-left: 2rem; 
+      display: list-item!important; /* add this */
+}
+      
       .about__content-details-para--hl {
         font-weight: 700;
         margin: 0 3px; }
