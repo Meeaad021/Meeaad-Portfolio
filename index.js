@@ -50,12 +50,7 @@ form.addEventListener('submit', async (e) => {
         const SUPABASE_URL = 'https://sxahcskgzfzmpfuctzag.supabase.co';  // Example: https://xxxxx.supabase.co
         const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InN4YWhjc2tnemZ6bXBmdWN0emFnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjY5OTE1OTIsImV4cCI6MjA4MjU2NzU5Mn0.F-z_XmzCm7PUaKSeXiRc9AzypuiSBljrB1j0TdcHI-o';  // Long string starting with eyJ...
         
-        // Make sure you've replaced the values above before testing!
-        if (SUPABASE_URL === 'https://sxahcskgzfzmpfuctzag.supabase.co' || SUPABASE_KEY === 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InN4YWhjc2tnemZ6bXBmdWN0emFnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjY5OTE1OTIsImV4cCI6MjA4MjU2NzU5Mn0.F-z_XmzCm7PUaKSeXiRc9AzypuiSBljrB1j0TdcHI-o') {
-            throw new Error('Please update Supabase credentials in index.js');
-        }
-        
-        const response = await fetch(`${SUPABASE_URL}/rest/v1/contact_submissions`, {
+        const response = await fetch(`${SUPABASE_URL}/rest/v1/contactme_info`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
