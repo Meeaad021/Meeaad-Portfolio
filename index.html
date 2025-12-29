@@ -1,366 +1,326 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Meeaad Bharoochi</title>
-    <meta name="description" content="Developer Portfolio" />
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeaad Bharoochi - Data Analyst Portfolio</title>
+    <meta name="description" content="Data Analyst Portfolio - 4+ years experience in market research, data mining, and analytics" />
     <link rel="stylesheet" href="css/style.css" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header class="header">
-      <div class="header__content">
-        <div class="header__logo-container">
-          <div class="header__logo-img-cont">
-            <img
-              src="./assets/png/Meeaad-Bharoochi.jpg"
-              alt="Meeaad Bharoochi Logo Image"
-              class="header__logo-img"
-            />
-          </div>
-          <span class="header__logo-sub">Meeaad Bharoochi</span>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <div class="logo-icon">MB</div>
+                <span class="logo-text">Meeaad Bharoochi</span>
+            </div>
+            <nav>
+                <button class="mobile-menu-btn">☰</button>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <div class="header__main">
-          <ul class="header__links">
-            <li class="header__link-wrapper">
-              <a href="./index.html" class="header__link">Home </a>
-            </li>
-            <li class="header__link-wrapper">
-              <a href="./index.html#about" class="header__link">Experience </a>
-            </li>
-            <li class="header__link-wrapper">
-              <a href="./index.html#projects" class="header__link">
-                Projects
-              </a>
-            </li>
-            <li class="header__link-wrapper">
-              <a href="./index.html#contact" class="header__link"> Contact </a>
-            </li>
-          </ul>
-          <div class="header__main-ham-menu-cont">
-            <img
-              src="./assets/svg/ham-menu.svg"
-              alt="hamburger menu"
-              class="header__main-ham-menu"
-            />
-            <img
-              src="./assets/svg/ham-menu-close.svg"
-              alt="hamburger menu close"
-              class="header__main-ham-menu-close d-none"
-            />
-          </div>
-        </div>
-      </div>
-      <div class="header__sm-menu">
-        <div class="header__sm-menu-content">
-          <ul class="header__sm-menu-links">
-            <li class="header__sm-menu-link">
-              <a href="./index.html"> Home </a>
-            </li>
-
-            <li class="header__sm-menu-link">
-              <a href="./index.html#about"> Experience </a>
-            </li>
-
-            <li class="header__sm-menu-link">
-              <a href="./index.html#projects"> Projects </a>
-            </li>
-
-            <li class="header__sm-menu-link">
-              <a href="./index.html#contact"> Contact </a>
-            </li>
-          </ul>
-        </div>
-      </div>
     </header>
-    <section class="home-hero">
-      <div class="home-hero__content">
-        <h1 class="heading-primary">Hey, My name is Meeaad Bharoochi</h1>
-        <div class="home-hero__info">
-          <p class="text-primary">As a Survey Programmer & Market Research Specialist, I combine code and curiosity to make survey scripting smarter, data cleaner, and insights sharper. Whether it’s building automation tools or designing efficient ETL pipelines, I bring 3+ years of hands-on experience to every challenge.</p>
+    
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Data Analyst</h1>
+                <p>Data processor with 4+ years of experience in market research specializing in data mining and modelling. Managed end-to-end data pipelines, from data collection and cleaning to data tables and insight-ready inputs.</p>
+                
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="dashboard-mock">
+                    <div class="chart-header">
+                        <span class="chart-title">Data Quality Analysis</span>
+                        <span class="chart-value">94.2%</span>
+                    </div>
+                    <div class="chart-bars">
+                        <div class="bar bar-1"></div>
+                        <div class="bar bar-2"></div>
+                        <div class="bar bar-3"></div>
+                        <div class="bar bar-4"></div>
+                        <div class="bar bar-5"></div>
+                        <div class="bar bar-6"></div>
+                    </div>
+                    <div class="metrics-grid">
+                        <div class="metric-card">
+                            <div class="metric-label">Response Rate</div>
+                            <div class="metric-value">87%</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-label">Data Accuracy</div>
+                            <div class="metric-value">96%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="home-hero__cta">
-          <a href="./#projects" class="btn btn--bg">Projects</a>
-        </div>
-      </div>
-      <div class="home-hero__socials">
-        <div class="home-hero__social">
-          <a href="https://www.linkedin.com/in/meeaadbharoochi/" class="home-hero__social-icon-link">
-            <img
-              src="./assets/png/linkedin-ico.png"
-              alt="icon"
-              class="home-hero__social-icon"
-            />
-          </a>
-        </div>
-        <div class="home-hero__social">
-          <a href="https://github.com/Meeaad021" class="home-hero__social-icon-link">
-            <img
-              src="./assets/png/github-ico.png"
-              alt="icon"
-              class="home-hero__social-icon"
-            />
-          </a>
-        </div>
-
-        <div class="home-hero__social">
-          <a
-            href="#"
-            class="home-hero__social-icon-link home-hero__social-icon-link--bd-none"
-          >
-            <img
-              src="./assets/png/insta-ico.png"
-              alt="icon"
-              class="home-hero__social-icon"
-            />
-          </a>
-        </div>
-      </div>
-      <div class="home-hero__mouse-scroll-cont">
-        <div class="mouse"></div>
-      </div>
     </section>
-    <section id="about" class="about sec-pad">
-      <div class="main-container">
-        <h2 class="heading heading-sec heading-sec__mb-med">
-          <span class="heading-sec__main">Experience</span>
-        </h2>
-         <div class="about__content">
-    <div class="about__content-main">
-      <div class="about__content-details">
-        <h3 class="about__content-title">Data Processing Executive</h3>
-        <p class="about__content-details-para">
-          <strong>Opinium</strong> • Aug 2024 – Present
-        </p>
-        <p>
-          <ul>
-           <li class="experience-details-para">Developed front-end survey scripts using CSS and JavaScript to ensure accurate and user-friendly data capture.</li>
-           <li class="experience-details-para">Built cross-tabulations and aggregated datasets in Excel to enable year-over-year trend analysis and reporting.</li>
-           <li class="experience-details-para">Utilized IBM SPSS to detect and correct bad or missing survey data caused by improper survey design, recoding invalid “None” responses into accurate values to ensure data integrity and reliable analysis.</li>
-          </ul>
-        </p>
-    </div>
-      <div class="about__content-details">
-        <h3 class="about__content-title">Content Creator</h3>
-        <p class="about__content-details-para">
-          <strong>Silo</strong> • Feb 2023 – Aug 2024
-        </p>
-        <ul>
-        <li class="experience-details-para"> Used SQL queries to update and synchronize product lists from captured data sources.</li>
-        <li class="experience-details-para"> Automated web data capture and extraction using Python and Selenium scripts, boosting efficiency by 10%.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-        <div class="about__content">
-          <div class="about__content-main">
-            <h3 class="about__content-title">Get to know me!</h3>
-            <div class="about__content-details">
-              <p class="about__content-details-para">I’m a proud dad and family guy who values balance between work, life, and passion. Whether spending time with my family, coding, hitting the golf course, or watching anime, I’m always growing. My faith as a Muslim guides how I live and work. I believe in a culture that trusts people and appreciates real effort. I work hard, whether at my desk or on a walk, always looking to learn and help others grow. This drive for growth for myself, my team, and my family keeps me going. Feel free to reach out and connect!</p>
+    
+    <section id="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Professional Experience</h2>
+                <p class="section-subtitle">Building expertise in survey programming, data processing, and automation solutions</p>
             </div>
-            <a href="./#contact" class="btn btn--med btn--theme dynamicBgClr"
-              >Contact</a>
-          </div>
-          <div class="about__content-skills">
-<h3 class="about__content-title">My Skills</h3>
-
-<h2>Languages</h2>
-<div class="skills">
-  <div class="skills__skill">HTML</div>
-  <div class="skills__skill">CSS</div>
-  <div class="skills__skill">JavaScript</div>
-  <div class="skills__skill">C#</div>
-  <div class="skills__skill">Python</div>
-  <div class="skills__skill">SQL</div>
-</div>
-
-<h2>Frameworks & Tools</h2>
-<div class="skills">
-  <div class="skills__skill">React</div>
-  <div class="skills__skill">Node.js</div>
-  <div class="skills__skill">Selenium</div>
-  <div class="skills__skill">IBM SPSS</div>
-</div>
-
-          </div>
+            
+            <div class="experience-grid">
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div>
+                            <h3>Data Processing Executive</h3>
+                            <p class="company">Opinium</p>
+                        </div>
+                        <span class="date">Aug 2024 – Present</span>
+                    </div>
+                    <ul>
+                        <li>Used Python and SQL to program surveys, transforming unstructured data into insight-ready datasets that enabled client decision-making on product strategy</li>
+                        <li>Applied Kano analysis, MaxDiff, and Conjoint analysis in SPSS to identify customer preferences, supporting client strategy with data-driven recommendations</li>
+                        <li>Built interactive dashboards in DisplayR that enabled non-technical stakeholders to track KPIs in real-time and monitor performance trends</li>
+                        <li>Used Excel pivot tables and Power Query to aggregate datasets for year-over-year trend analysis, streamlining reporting workflows</li>
+                        <li>Presented findings to clients using PowerPoint, translating complex statistical analysis into clear business recommendations that informed strategic decisions</li>
+                    </ul>
+                </div>
+                
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div>
+                            <h3>Data Capturer</h3>
+                            <p class="company">Hirt & Carter</p>
+                        </div>
+                        <span class="date">Sep 2021 – Jan 2023</span>
+                    </div>
+                    <ul>
+                        <li>Built ELT workflow using SQL to extract data from third-party sources, transforming it into marketing-ready datasets that teams used to optimize campaign ROI</li>
+                        <li>Used XML processing and Excel to capture marketing data accurately, ensuring data quality for downstream analytics</li>
+                        <li>Collaborated with cross-functional teams including marketing and sales to align data collection with business requirements</li>
+                    </ul>
+                </div>
+                
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div>
+                            <h3>Content Creator</h3>
+                            <p class="company">Silo</p>
+                        </div>
+                        <span class="date">Feb 2023 – Jul 2024</span>
+                    </div>
+                    <ul>
+                        <li>Used SQL and Python to process web content data, generating insights that improved website performance and increased SEO rankings</li>
+                        <li>Presented content analysis findings to stakeholders using Excel and PowerPoint, driving content strategy decisions</li>
+                        <li>Worked in Agile teams, meeting 100% of sprint deadlines and delivering data-driven recommendations</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
-    <section id="projects" class="projects sec-pad">
-      <div class="main-container">
-        <h2 class="heading heading-sec heading-sec__mb-bg">
-          <span class="heading-sec__main">Projects</span>
-          <span class="heading-sec__sub">
-            A collection of hands-on projects showcasing my skills in automation, data processing, and front-end development. These projects highlight my ability to solve real-world problems using tools like Python, JavaScript, Selenium, and React—ranging from streamlining survey workflows to building responsive web interfaces. Each project reflects my focus on efficiency, clean code, and user-centered design, with a strong emphasis on data integrity and process automation.
-
-
-          </span>
-        </h2>
-
-        <div class="projects__content">
-          <div class="projects__row">
-            <div class="projects__row-img-cont">
-              <img
-                src="./assets/jpeg/project-mockup-example.jpeg"
-                alt="Software Screenshot"
-                class="projects__row-img"
-                loading="lazy"
-              />
+    
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <h3>About Me</h3>
+                    <p>I'm a proud dad and family guy who values balance between work, life, and passion. Whether spending time with my family, coding, hitting the golf course, or watching anime, I'm always growing.</p>
+                    <p>My faith as a Muslim guides how I live and work. I believe in a culture that trusts people and appreciates real effort. I work hard, whether at my desk or on a walk, always looking to learn and help others grow.</p>
+                    <p>This drive for growth—for myself, my team, and my family—keeps me going. Feel free to reach out and connect!</p>
+                </div>
+                
+                <div class="skills-container">
+                    <h3>Skills & Tools</h3>
+                    <div class="skills-category">
+                        <h4>Data Analysis & Modeling</h4>
+                        <div class="skills-grid">
+                            <span class="skill-tag">Data Mining</span>
+                            <span class="skill-tag">Statistical Analysis</span>
+                            <span class="skill-tag">Data Modeling</span>
+                            <span class="skill-tag">Python (Pandas, NumPy)</span>
+                            <span class="skill-tag">SPSS</span>
+                            <span class="skill-tag">Excel</span>
+                        </div>
+                    </div>
+                    <div class="skills-category">
+                        <h4>Programming & Scripting</h4>
+                        <div class="skills-grid">
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">HTML/CSS</span>
+                        </div>
+                    </div>
+                    <div class="skills-category">
+                        <h4>Data Visualization & Dashboards</h4>
+                        <div class="skills-grid">
+                            <span class="skill-tag">DisplayR</span>
+                            <span class="skill-tag">KPI Tracking</span>
+                            <span class="skill-tag">PowerPoint</span>
+                        </div>
+                    </div>
+                    <div class="skills-category">
+                        <h4>Data Management & Transformation</h4>
+                        <div class="skills-grid">
+                            <span class="skill-tag">ELT/ETL Workflows</span>
+                            <span class="skill-tag">Data Pipelines</span>
+                            <span class="skill-tag">XML/JSON</span>
+                            <span class="skill-tag">Power Query</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Website Scraper</h3>
-              <p class="projects__row-content-desc">
-                This Python script automates the process of retrieving product information from websites and populating an Excel file with the gathered data.
-              </p>
-              <a
-                href="./project-1.html"
-                class="btn btn--med btn--theme dynamicBgClr"
-                target="_blank"
-                >Case Study</a>
-            </div>
-          </div>
-          <div class="projects__row">
-            <div class="projects__row-img-cont">
-              <img
-                src="./assets/jpeg/project-mockup-example.jpeg"
-                alt="Software Screenshot"
-                class="projects__row-img"
-                loading="lazy"
-              />
-            </div>
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">C# Style Guide</h3>
-              <p class="projects__row-content-desc">
- Developed a C# "style guide" chat bot to help standardize data entry practices accross the team. This was done at Silo where there was no guideline in place, leading to inconsistencies in data handling. The bot provided real-time suggestions and corrections, significantly improving data quality and team efficiency.
-              </p>
-              <a
-                href="./project-2.html"
-                class="btn btn--med btn--theme dynamicBgClr"
-                target="_blank"
-                >Case Study</a
-              >
-            </div>
-          </div>
-          <div class="projects__row">
-            <div class="projects__row-img-cont">
-              <img
-                src="./assets/jpeg/project-mockup-example.jpeg"
-                alt="Software Screenshot"
-                class="projects__row-img"
-                loading="lazy"
-              />
-            </div>
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Windows 98 Portfolio</h3>
-              <p class="projects__row-content-desc">
-                Designed and developed a fully responsive personal portfolio with a nostalgic Windows 98 theme using React and Node.js. Although I was born in ’98, Windows 98 was the common software I used growing up, so the design resonates deeply and resembles myself a lot. The site showcases key projects, skills, and contact information with a clean, retro UI, deployed via GitHub Pages.
-              </p>
-              <a
-                href="./project-3.html"
-                class="btn btn--med btn--theme dynamicBgClr"
-                target="_blank"
-                >Case Study</a
-              >
-            </div>
-          </div>
         </div>
-      </div>
     </section>
-    <section id="contact" class="contact sec-pad dynamicBg">
-      <div class="main-container">
-        <h2 class="heading heading-sec heading-sec__mb-med">
-          <span class="heading-sec__main heading-sec__main--lt">Contact</span>
-          <span class="heading-sec__sub heading-sec__sub--lt">
-            I’m always open to connecting! Whether you have questions, opportunities, or just want to say hello, feel free to reach out. I’m eager to discuss how I can contribute to your team or collaborate on exciting projects.
-          </span>
-        </h2>
-        <div class="contact__form-container">
-  <form
-    id="contactForm"
-    class="contact__form"
-    action="https://formspree.io/f/mjkogvjd"
-    method="POST"
-  >
-    <input type="hidden" name="_subject" value="New contact form submission!" />
-    <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html" />
-
-    <div class="contact__form-field">
-      <label class="contact__form-label" for="name">Name</label>
-      <input
-        required
-        placeholder="Enter Your Name"
-        type="text"
-        class="contact__form-input"
-        name="name"
-        id="name"
-      />
-    </div>
-
-    <div class="contact__form-field">
-      <label class="contact__form-label" for="email">Email</label>
-      <input
-        required
-        placeholder="Enter Your Email"
-        type="email"
-        class="contact__form-input"
-        name="email"
-        id="email"
-      />
-    </div>
-
-    <div class="contact__form-field">
-      <label class="contact__form-label" for="message">Message</label>
-      <textarea
-        required
-        cols="30"
-        rows="10"
-        class="contact__form-input"
-        placeholder="Enter Your Message"
-        name="message"
-        id="message"
-      ></textarea>
-    </div>
-
-    <button type="submit" class="btn btn--theme contact__btn">
-      Submit
-    </button>
-  </form>
-</div>
-
-
-    <script src="./index.js"></script>
-<script>
-  const form = document.getElementById("contactForm");
-
-  form.addEventListener("submit", async function (e) {
-    e.preventDefault();
-
-    const formData = new FormData(form);
-    const response = await fetch(form.action, {
-      method: form.method,
-      body: formData,
-      headers: {
-        Accept: "application/json"
-      }
-    });
-
-    if (response.ok) {
-      alert("✅ Thank you! Your message has been sent.");
-      form.reset();
-    } else {
-      alert("❌ Oops! Something went wrong. Please try again.");
-    }
-  });
-</script>
-  </body>
+    
+    <section id="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Data analysis and automation solutions showcasing end-to-end data processing expertise</p>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-visual">
+                        <div class="project-icon">🤖</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Survey Automation Testing Tool</h3>
+                        <p>Built Python automation tool using Selenium that reduced survey testing time by 80%, simulating multiple respondents to validate survey logic and data collection. Automated detection of question types and response patterns, logging results to Excel for quality assurance teams to identify issues before client deployment.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Selenium</span>
+                            <span class="project-tag">Excel</span>
+                            <span class="project-tag">Automation</span>
+                        </div>
+                        <a href="https://github.com/Meeaad021/Survey-Bot" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">View on GitHub</a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-visual">
+                        <div class="project-icon">📊</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Excel to PowerPoint Chart Generator</h3>
+                        <p>Developed Python tool that automated chart creation from Excel data into branded PowerPoint presentations, saving teams 5+ hours per report. Built dynamic system supporting 8 chart types with data cleaning and validation, enabling analysts to focus on insights rather than manual chart formatting.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Pandas</span>
+                            <span class="project-tag">Excel</span>
+                            <span class="project-tag">PowerPoint</span>
+                        </div>
+                        <a href="https://github.com/Meeaad021/Charting" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">View on GitHub</a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-visual">
+                        <div class="project-icon">📈</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Interactive DisplayR Dashboard</h3>
+                        <p>Used DisplayR to build interactive dashboards that enabled stakeholders to track KPIs in real-time, improving decision-making speed by 30%. Communicated complex data findings to non-technical executives through clear visualizations, translating survey insights into actionable business recommendations.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">DisplayR</span>
+                            <span class="project-tag">Data Visualization</span>
+                            <span class="project-tag">Stakeholder Communication</span>
+                        </div>
+                        <a href="#" class="btn btn-secondary">View Case Study</a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-visual">
+                        <div class="project-icon">🔄</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Marketing Analytics ELT Pipeline</h3>
+                        <p>Built SQL-based ELT workflow that automated data extraction from third-party sources, reducing manual processing time by 40%. Transformed raw XML data into insight-ready datasets that marketing teams used to optimize campaign ROI and improve targeting strategies across multiple channels.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">SQL</span>
+                            <span class="project-tag">ELT/ETL</span>
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Excel</span>
+                        </div>
+                        <a href="#" class="btn btn-secondary">View Case Study</a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-visual">
+                        <div class="project-icon">📉</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Survey Analysis & Client Strategy</h3>
+                        <p>Used SPSS and Python to analyze survey data using MaxDiff and Conjoint analysis, identifying customer preferences that informed product development decisions. Presented findings to non-technical stakeholders using PowerPoint and Excel, enabling data-driven strategy that increased client satisfaction scores.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">SPSS</span>
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Excel</span>
+                            <span class="project-tag">PowerPoint</span>
+                        </div>
+                        <a href="#" class="btn btn-secondary">View Case Study</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's discuss how I can contribute to your team or collaborate on exciting projects</p>
+            </div>
+            
+            <div class="contact-container">
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="company">Company (Optional)</label>
+                        <input type="text" id="company" name="company" placeholder="Your company">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Your message..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit">
+                        <span id="btnText">Send Message</span>
+                    </button>
+                    <div id="formStatus" class="form-status"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/meeaadbharoochi/" title="LinkedIn" class="social-link">💼</a>
+            <a href="https://github.com/Meeaad021" title="GitHub" class="social-link">💻</a>
+            <a href="#" title="Instagram" class="social-link">📷</a>
+        </div>
+        <p>© 2024 MEEAAD BHAROOCHI • Crafted with data-driven precision</p>
+    </footer>
+    
+    <script src="index.js"></script>
+</body>
 </html>
