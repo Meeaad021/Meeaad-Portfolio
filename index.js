@@ -47,10 +47,15 @@ form.addEventListener('submit', async (e) => {
     try {
         // IMPORTANT: Replace these with your actual Supabase credentials
         // Get them from: https://supabase.com/dashboard/project/_/settings/api
-        const SUPABASE_URL = 'https://sxahcskgzfzmpfuctzag.supabase.co';  // Example: https://xxxxx.supabase.co
-        const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InN4YWhjc2tnemZ6bXBmdWN0emFnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjY5OTE1OTIsImV4cCI6MjA4MjU2NzU5Mn0.F-z_XmzCm7PUaKSeXiRc9AzypuiSBljrB1j0TdcHI-o';  // Long string starting with eyJ...
+        const SUPABASE_URL = 'YOUR_SUPABASE_URL_HERE';  // Example: https://xxxxx.supabase.co
+        const SUPABASE_KEY = 'YOUR_SUPABASE_ANON_KEY_HERE';  // Long string starting with eyJ...
         
-        const response = await fetch(`${SUPABASE_URL}/rest/v1/contactme_info`, {
+        // Make sure you've replaced the values above before testing!
+        if (SUPABASE_URL === 'YOUR_SUPABASE_URL_HERE' || SUPABASE_KEY === 'YOUR_SUPABASE_ANON_KEY_HERE') {
+            throw new Error('Please update Supabase credentials in index.js');
+        }
+        
+        const response = await fetch(`${SUPABASE_URL}/rest/v1/contact_submissions`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -105,3 +110,41 @@ window.addEventListener('scroll', () => {
         }
     });
 });
+
+// Scroll animations - Intersection Observer
+const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            // Optional: stop observing after animation (uncomment if you want animation only once)
+            // observer.unobserve(entry.target);
+        }
+    });
+}, observerOptions);
+
+// Observe sections
+document.querySelectorAll('section').forEach(section => {
+    observer.observe(section);
+});
+
+// Observe experience cards with stagger effect
+document.querySelectorAll('.experience-card').forEach((card, index) => {
+    card.style.transitionDelay = `${index * 0.1}s`;
+    observer.observe(card);
+});
+
+// Observe project cards with stagger effect
+document.querySelectorAll('.project-card').forEach((card, index) => {
+    card.style.transitionDelay = `${index * 0.15}s`;
+    observer.observe(card);
+});
+
+// Observe about section elements
+observer.observe(document.querySelector('.about-content'));
+observer.observe(document.querySelector('.skills-container'));
+observer.observe(document.querySelector('.contact-container'));

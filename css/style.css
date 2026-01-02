@@ -20,8 +20,8 @@ header {
     top: 0;
     width: 100%;
     background: rgba(255, 255, 255, 0.95);
-    -webkit-backdrop-filter: blur(10px);  
-    backdrop-filter: blur(10px);         
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
     border-bottom: 1px solid #e2e8f0;
     padding: 1.2rem 0;
     z-index: 1000;
@@ -278,6 +278,20 @@ nav a:hover::after {
 /* Section Styling */
 section {
     padding: 5rem 2rem;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Hero section should be visible immediately */
+.hero {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .container {
@@ -316,11 +330,19 @@ section {
     padding: 2rem;
     border: 1px solid #e2e8f0;
     transition: all 0.3s;
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out, box-shadow 0.3s;
+}
+
+.experience-card.visible {
+    opacity: 1;
+    transform: translateX(0);
 }
 
 .experience-card:hover {
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-    transform: translateY(-4px);
+    transform: translateY(-4px) translateX(0);
 }
 
 .experience-header {
@@ -385,6 +407,17 @@ section {
     gap: 3rem;
 }
 
+.about-content {
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.about-content.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
 .about-content h3 {
     font-size: 1.8rem;
     font-weight: 700;
@@ -404,6 +437,14 @@ section {
     padding: 2rem;
     border-radius: 12px;
     border: 1px solid #e2e8f0;
+    opacity: 0;
+    transform: translateX(30px);
+    transition: opacity 0.6s ease-out 0.2s, transform 0.6s ease-out 0.2s;
+}
+
+.skills-container.visible {
+    opacity: 1;
+    transform: translateX(0);
 }
 
 .skills-container h3 {
@@ -468,11 +509,19 @@ section {
     transition: all 0.3s;
     display: grid;
     grid-template-columns: 400px 1fr;
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out, box-shadow 0.3s;
+}
+
+.project-card.visible {
+    opacity: 1;
+    transform: translateX(0);
 }
 
 .project-card:hover {
     box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
-    transform: translateY(-4px);
+    transform: translateY(-4px) translateX(0);
 }
 
 .project-visual {
@@ -533,6 +582,14 @@ section {
 .contact-container {
     max-width: 600px;
     margin: 0 auto;
+    opacity: 0;
+    transform: scale(0.95);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.contact-container.visible {
+    opacity: 1;
+    transform: scale(1);
 }
 
 .contact-form {
